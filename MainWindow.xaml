@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="200">
     <Grid Margin="0,0,10,0">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="29,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.611,0.334" Height="43" Width="122"/>
-        <Label Content="Label" HorizontalAlignment="Center" Margin="0,234,0,0" VerticalAlignment="Top" Height="41" Width="132" />
-        <TextBox HorizontalAlignment="Left" Margin="31,110,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="32"/>
-        <Label Content="Enter a number below to &#xD;&#xA;see if it is a &#xD;&#xA;narcissistic number" HorizontalAlignment="Left" Margin="6,10,0,0" VerticalAlignment="Top" Height="56" Width="170"/>
+        <Label  Content="Enter a number below to &#xD;&#xA;see if it is a &#xD;&#xA;narcissistic number" HorizontalAlignment="Left" Margin="6,10,0,0" VerticalAlignment="Top" Height="56" Width="170"/>
+        <TextBox Name="txtNumber" HorizontalAlignment="Left" Margin="31,110,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Height="32"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="29,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.611,0.334" Height="43" Width="122" Click="Button_Click"/>
+        <Label Name="lblResult" Content="Test" HorizontalAlignment="Center" Margin="0,234,0,0" VerticalAlignment="Top" Height="41" Width="132" />
 
     </Grid>
 </Window>
