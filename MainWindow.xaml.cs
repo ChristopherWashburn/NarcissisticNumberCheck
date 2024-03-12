@@ -39,7 +39,8 @@ namespace NarcissisticNumberCheck
             //of input number and add to total 
             foreach(var c in charDigits)
             {
-                //dblNarcNum = Math.Pow(c, intNumDigits);
+                //Convert char from ASCII number to actual digit number
+                //then raise the number to the power of the total number of digits
                 dblCharNum = Char.GetNumericValue(c);
                 dblNarcNum += Math.Pow(dblCharNum, intNumDigits);
             }
@@ -47,10 +48,13 @@ namespace NarcissisticNumberCheck
             //check if it is equal to original number
             if (dblNarcNum == Int32.Parse(strInputNum))
             {
+                //if numbers are equals then set message that it is
+                //a narcissistic number
                 lblResult.Content = "This is a Narcissistic Number!";
             }
             else
             {
+                //if not set message to that it is not a narcissistic number
                 lblResult.Content = "This is not a Narcissistic Number!";
             }
         }
